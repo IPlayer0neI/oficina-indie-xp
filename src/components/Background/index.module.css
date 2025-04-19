@@ -1,0 +1,58 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/various/backgroundXP.webp");
+  z-index: -1;
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shortcut {
+  width: 80px;
+  height: 80px;
+  transform: translate(0px, 0px);
+  z-index: 1;
+  padding: 4px 2px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /*position: absolute;*/
+  box-sizing: border-box;
+  touch-action: manipulation;
+}
+
+.shortcut > img {
+  max-width: 60px;
+}
+
+.shortcut:active:hover {
+  border-color: #b8d6fc;
+  background: linear-gradient(0deg, rgba(193, 220, 252, .6666666667), rgba(220, 235, 252, .6666666667));
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667);
+}
+
+.shortcut:hover {
+  background: rgba(242, 247, 254, .4666666667);
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .6666666667);
+}
+
+
+.shortcut-label {
+  text-shadow: 0 1px 2px #000, 0 1px 2px #000, 0 1px 3px #000;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+  font-size: 10px;
+  height: 20px;
+  line-height: 20px;
+  max-width: 100%;
+}

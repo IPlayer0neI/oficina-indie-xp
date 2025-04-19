@@ -1,0 +1,56 @@
+.aboutAndreYoungContainer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+}
+
+.aboutAndreYoung {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+}
+
+.innerWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 6rem 0;
+    overflow: hidden !important;
+}
+
+.andreYoungDescriptionContainer {
+    width: 79%;
+    display: flex;
+    gap: 4.25rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.andreYoungImgContainer {
+    width: 28vw;
+    position: relative;
+}
+
+.andreYoungImgContainer>img {
+    width: 100%;
+    aspect-ratio: auto 500 / 500;
+}
+
+.andreYoungDescription {
+    flex-shrink: 2;
+}
+
+.andreYoungTitle {
+    font-size: 3rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .andreYoungImgContainer {
+        width: 40vw;
+    }
+    .andreYoungDescriptionContainer {
+        flex-direction: column;
+    }
+}

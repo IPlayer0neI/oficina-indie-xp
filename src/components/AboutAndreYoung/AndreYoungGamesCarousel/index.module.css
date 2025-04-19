@@ -1,0 +1,101 @@
+.andreYoungGamesCarousel {
+    width: 100%;
+    position: relative;
+}
+
+.carouselItemStyle {
+    transition-duration: 0.5s;
+    width: 30%;
+    overflow: hidden;
+}
+
+.itemHidden {
+    visibility: hidden;
+}
+
+.arrowLeft {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    position: absolute !important;
+    top: calc(50% - 30px / 2);
+    left: -85px;
+    transform: translateX(100%);
+}
+
+.arrowLeft::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(81, 67, 233);
+    width: 50%;
+    height: 80%;
+    top: 5px;
+    left: 25%;
+    border-radius: 50%;
+}
+
+.arrowLeft:hover::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(237, 237, 237, 0.9);
+    width: 50%;
+    height: 80%;
+    top: 5px;
+    left: 25%;
+    border-radius: 50%;
+}
+
+.arrowRight {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    position: absolute !important;
+    top: calc(50% - 30px / 2);
+    right: -85px;
+    transform: translateX(-100%);
+    border-radius: 200%;
+}
+
+.bullet {
+    width: 6px;
+    height: 6px;
+    margin: 10px 6px 0;
+    opacity: 0.2;
+    background-image: linear-gradient(135deg, #5143E9 0%, #A81CC1 50%, #A81CC1 100%);
+    transition: width 0.5s, border-radius 0s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.expandBullet {
+    width: 6px;
+    height: 6px;
+    margin: 10px 6px 0;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #5143E9 0%, #A81CC1 50%, #A81CC1 100%);
+    transition: width 0.5s, border-radius 0s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .carouselItemStyle {
+        width: 100%;
+    }
+    /*Eu não sei como usar toda uma lógica para centralizar os elementos e 
+    fazer as imagens não crescerem muito, então decidi fazer com que os elementos
+    img dentro não crescessem muito, assim o display-flex do carouselitemStyle 
+    centraliza a imagem já que ele vai estar ocupando 100% da "tela". 
+    */
+    .carouselItemStyle > img {
+        max-width: 300px;
+    }
+
+    .arrowRight {
+        right: -10%;
+    }
+
+    .arrowLeft {
+        left: -10%;
+    }
+}

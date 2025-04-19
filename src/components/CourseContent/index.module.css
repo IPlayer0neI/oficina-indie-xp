@@ -1,0 +1,24 @@
+.summaryContentContainer {
+    width: 100%;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 0 auto;
+    padding: 6rem 1.25rem;
+    width: 90%;
+    max-width: 1280px;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .cardsContainer {
+        grid-template-columns: auto;
+    }
+
+    .cardsContainer {
+        padding: 4rem 1.25rem;
+    }
+}

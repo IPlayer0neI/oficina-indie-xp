@@ -1,0 +1,22 @@
+.developingGamesCarouselContainer {
+    width: 100%;
+    height: auto;
+}
+
+.developingGamesCarousel {
+    padding: 6rem 0;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .developingGamesCarousel {
+        padding: 4rem 0;
+    }
+}

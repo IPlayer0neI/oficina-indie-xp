@@ -1,0 +1,58 @@
+.gamesByStudentsContainer {
+    width: 100%;
+}
+
+.gamesByStudents {
+    padding: 6rem 0;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.titleContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.gamesByStudentsCarouselContainer {
+    padding: 2rem 2rem;
+}
+
+.customItemEmphasisStyle {
+    transform: scale(1);
+}
+
+@media (max-width: 768px) {
+    .title {
+        width: auto;
+    }
+
+    .gamesByStudentsCarouselContainer {
+        padding: 0;
+    }
+
+    .customItemEmphasisStyle {
+        transform: scale(1.5);
+    }
+
+    .gamesByStudents {
+        padding: 4rem 0;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

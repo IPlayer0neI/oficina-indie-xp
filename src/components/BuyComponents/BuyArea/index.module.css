@@ -1,0 +1,45 @@
+.buyArea {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 38%;
+}
+
+.priceContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    text-align: left;
+}
+
+.amount {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.cents {
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    vertical-align: 1.5rem;
+}
+
+.subdivision {
+    line-height: 1rem;
+    font-size: 1.25rem;
+    text-align: end;
+}
+
+@media (max-width: 768px) {
+    .buyArea {
+        width: 100%;
+    }
+}

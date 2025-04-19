@@ -1,0 +1,35 @@
+.purchaseOverviewContainer {
+    width: 100%;
+}
+
+.purchaseOverview {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+}
+
+.innerWindow {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.benefitsArea {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .benefitsArea {
+        flex-direction: column;
+    }
+
+    .inneerWindow {
+        padding: 4rem 0;
+    }
+}

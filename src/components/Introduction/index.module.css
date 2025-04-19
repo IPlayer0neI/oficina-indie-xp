@@ -1,0 +1,77 @@
+ .introductionContainer {
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.window {
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.innerWindow {
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    gap: 1.5rem;
+}
+
+.header {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgContainer>img {
+    width: 30%;
+}
+
+.youtubeVideoContainer {
+    display: flex;
+    justify-content: center;
+    padding: 0 6.25rem;
+}
+
+.youtubeFrame {
+    border-radius: 0;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    width: 75%;
+}
+
+.introductionText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.50rem
+}
+
+.introductionTitle {
+    width: 100%;
+    text-align: center;
+}
+
+.introductionParagraph {
+    width: 81%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .youtubeFrame {
+        width: 100%;
+    }
+
+    .youtubeVideoContainer {
+        padding: 0;
+    }
+} 

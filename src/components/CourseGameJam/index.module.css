@@ -1,0 +1,87 @@
+.buyGameJamContainer {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.buyGameJam {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.innerWindow {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.gameJam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.gameJamImg {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer {
+    aspect-ratio: auto 800 / 571;
+    width: 80%;
+    overflow: hidden;
+}
+
+.gameJamDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 50%;
+}
+
+.gameJamDescriptionTitle {
+    line-height: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.paragraphs > p {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.buyAreaContainer {
+    padding-top: 0rem;
+}
+
+.gameJamDescription {
+    height: 29rem;
+}
+
+@media (max-width: 768px) {
+    .gameJam {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .imgContainer {
+        width: auto;
+    }
+
+    .gameJamDescription {
+        width: auto;
+    }
+
+    .gameJamImg {
+        width: auto;
+    }
+
+    .buyGameJam {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,100 @@
+.footer {
+    height: 30px;
+    background: linear-gradient(rgb(31, 47, 134) 0px, rgb(49, 101, 196) 3%, rgb(54, 130, 229) 6%, rgb(68, 144, 230) 10%, rgb(56, 131, 229) 12%, rgb(43, 113, 224) 15%, rgb(38, 99, 218) 18%, rgb(35, 91, 214) 20%, rgb(34, 88, 213) 23%, rgb(33, 87, 214) 38%, rgb(36, 93, 219) 54%, rgb(37, 98, 223) 86%, rgb(36, 95, 220) 89%, rgb(33, 88, 212) 92%, rgb(29, 78, 192) 95%, rgb(25, 65, 165) 98%);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+}
+
+.footerApps {
+    height: 100%;
+    flex: 1 1 0%;
+    overflow: hidden;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.start {
+    height: 100%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.start:hover {
+    filter: brightness(105%);
+}
+
+.start:hover:active {
+    pointer-events: none;
+    filter: brightness(85%);
+}
+
+.app {
+    flex: 1 1 0%;
+    max-width: 150px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    margin-top: 2px;
+    padding: 0px 8px;
+    height: 22px;
+    font-size: 11px;
+    background-color: rgb(60, 129, 243);
+    box-shadow: rgba(0, 0, 0, 0.3) -1px 0px inset, rgba(255, 255, 255, 0.2) 1px 1px 1px inset;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.app:hover {
+    background-color: rgb(83, 163, 255);
+    box-shadow: rgba(0, 0, 0, 0.3) -1px 0px inset, rgba(255, 255, 255, 0.2) 1px 1px 1px inset;
+}
+
+.app:hover:active {
+    background-color: rgb(30, 82, 183);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.7) 1px 0px 1px inset;
+}
+
+.appIcon {
+    height: 15px;
+    width: 15px;
+}
+
+.appText {
+    position: absolute;
+    left: 27px;
+    right: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tray {
+    flex-shrink: 0;
+    background: linear-gradient(rgb(12, 89, 185) 1%, rgb(19, 158, 233) 6%, rgb(24, 181, 242) 10%, rgb(19, 155, 235) 14%, rgb(18, 144, 232) 19%, rgb(13, 141, 234) 63%, rgb(13, 159, 241) 81%, rgb(15, 158, 237) 88%, rgb(17, 155, 233) 91%, rgb(19, 146, 226) 94%, rgb(19, 126, 215) 97%, rgb(9, 91, 201) 100%);
+    border-left: 1px solid rgb(16, 66, 175);
+    box-shadow: rgb(24, 187, 255) 1px 0px 1px inset;
+    padding: 0px 10px;
+    margin-left: 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.trayItem {
+    height: 15px;
+    width: 15px;
+}
+
+.time {
+    margin: 0px 5px;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: lighter;
+    text-shadow: none;
+    line-height: normal;
+}

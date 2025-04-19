@@ -1,0 +1,46 @@
+.cardHeader {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.cardTitle {
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+
+.imgCard {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.cardParagraph {
+    vertical-align: middle;
+    margin-bottom: 1.25rem;
+}
+
+.card {
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.windowClass {
+    margin-left: -20px;
+}
+
+.CommandPromptStyle {
+    margin-top: -20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}

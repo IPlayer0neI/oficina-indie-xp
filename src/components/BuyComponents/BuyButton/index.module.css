@@ -1,0 +1,12 @@
+.buyButtonContainer {
+    width: 100%
+}
+
+.buyButton {
+    width: 100%;
+    font-size: 32px;
+}
+
+.buttonText {
+    font-family: inherit;
+}

@@ -1,0 +1,112 @@
+.carouselContainer {
+    position: relative;
+    width: calc(100% - 60px);
+    height: 100%;
+    padding: 2rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+}
+
+.carouselItem {
+    position: absolute;
+    width: 33.5%;
+    border-radius: 1rem;
+    transition: 0.5s;
+    filter: blur(3px);
+    transform: scale(0.8);
+}
+
+
+.carouselItem > img {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carouselItEmemphasis {
+    z-index: 999;
+    filter: none;
+    transform: scale(1.5);
+}
+
+.carouselItemLeft {
+    transform: scale(0.8) translateX(30%);
+}
+
+.carouselItemRight {
+    transform: scale(0.8) translateX(-30%);
+}
+
+.carouselItemHidden {
+    filter: blur(50px);
+    transform: scale(0.5);
+    visibility: hidden;
+}
+
+.arrowLeft {
+    cursor: pointer;
+    border: none;
+    position: absolute !important;
+    top: calc(50% - 30px / 2);
+    left: -1.5rem;
+    transform: translateX(100%);
+}
+
+.arrowRight {
+    cursor: pointer;
+    border: none;
+    position: absolute !important;
+    top: calc(50% - 30px / 2);
+    right: -1.5rem;
+    transform: translateX(-100%);
+}
+
+.bullet {
+    width: 6px;
+    height: 6px;
+    margin: 10px 6px 0;
+    background: #5143E9;
+    transition: width 0.5s, border-radius 0s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.expandBullet {
+    width: 30px;
+    height: 6px;
+    margin: 10px 6px 0;
+    background: #5143E9;
+    transition: width 0.5s, border-radius 0s;
+    border-radius: 2px;
+    background-image: linear-gradient(135deg, rgb(81, 67, 233) 0%, rgb(168, 28, 193) 50%, rgb(168, 28, 193) 100%);
+}
+
+@media (max-width: 768px) {
+    .carouselContainer {
+        width: calc(100%);
+    }
+    
+    .carouselItEmemphasis {
+        z-index: 999;
+        filter: none;
+        transform: scale(1.5);
+    }
+
+    .arrowLeft {
+        transform: translateX(50%);
+    }
+
+    .arrowRight {
+        transform: translateX(-50%);
+    }
+
+    
+    .carouselItemLeft {
+        transform: scale(0.8) translateX(30%);
+    }
+    
+    .carouselItemRight {
+        transform: scale(0.8) translateX(-30%);
+    }
+}
