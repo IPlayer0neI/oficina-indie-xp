@@ -20,7 +20,7 @@ function renderList(node: NodeTree) {
         const hasMoreTree = tree && tree[0];
 
         return (
-            <li>
+            <li key={title}>
                 <details open={open} key={title}>
                     <summary>{title}</summary>
                     {
