@@ -4,7 +4,7 @@ export function Footer() {
     return (
         <div className={styles.footer}>
             <div className={styles.footerApps}>
-                <img src="./assets/various/start.png" className={styles.start} />
+                <img src="./assets/taskbar-added-images/start.png" className={styles.start} />
                 <div className={styles.app}>
                     <img src="./icon.png" className={styles.appIcon} />
                     <div className={styles.appText}>
