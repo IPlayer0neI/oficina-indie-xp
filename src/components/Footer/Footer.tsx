@@ -1,6 +1,9 @@
+import { useTime } from "@/hooks/useTime"
 import styles from "./index.module.css"
 
 export function Footer() {
+    const { time } = useTime();
+
     return (
         <div className={styles.footer}>
             <div className={styles.footerApps}>
@@ -35,7 +38,7 @@ export function Footer() {
                 <img src="./assets/taskbar-added-images/arrow.png" className={styles.trayItem} />
                 <img src="./assets/taskbar-added-images/shieldX.png" className={styles.trayItem} />
                 <div className={styles.time}>
-                    08: 26
+                    {time}
                 </div>
             </div>
         </div >
